@@ -19,10 +19,10 @@ if (number % 2 != 0){
 let num1 = prompt ("Enter a num1");
 let num2 = prompt ("Enter a num2");
 if (num1 > num2){
-  alert (num1);
+  alert (`${num1} is grater`);
 }
 else{
-  alert (num2);
+  alert (`${num2} is grater`);
 }
 
 // 3. Convert the above code using`?` terniary operator
@@ -42,10 +42,10 @@ alert (num2);
 
 
 let house = prompt ("Enter house name");
-if (house == "stark" ){
+if (house === "stark" ){
   alert (" Winter is coming") ;
 }
-else if (house == "lannister"){
+else if (house === "lannister"){
   alert (" A lannister always pays his debt");
 }
 else{
@@ -65,8 +65,8 @@ alert (" All men must die");
 // Switch
 
 // 6. Write a program that takes the number of the month(1 - 12) and alert number of days in the month.
-let num = Number (prompt ("number of the mounth"));
-switch (num){
+let monthNumber = Number (prompt ("number of the mounth"));
+switch (monthNumber){
   case 4:
   case 6:
   case 9:
@@ -99,15 +99,15 @@ switch (num){
 
 let salery = Number (prompt ("Enter salery of the user"));
 if (salery <= 20000){
-  in_Hand_Amount = salery - 0.1 * salery
+  let in_Hand_Amount = salery - 0.1 * salery
   alert (in_Hand_Amount);
 }
 else if (salery <= 40000){
-  in_Hand_Amount = salery - 0.2 * salery
+  let in_Hand_Amount = salery - 0.2 * salery
   alert (in_Hand_Amount);
 }
 else{
-  in_Hand_Amount = salery - 0.3 * salery
+  let in_Hand_Amount = salery - 0.3 * salery
   alert (in_Hand_Amount);
 }
 
