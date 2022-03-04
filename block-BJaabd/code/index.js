@@ -19,7 +19,7 @@ switch (true){
   case age <= 11 :
     alert("You are too young to participate in the marathon");
     break;
-  case age < 55 :
+  case  age < 55 :
     alert("You can participate in the marathon");
     break;
   default :
@@ -37,13 +37,14 @@ n = 7 => output: heeeeeeello
 👇
 */
 // [Your code goes here]
- 
-let n = prompt ("Enter the number of n");
-while (n > 0){
-  alert (`h${n}llo`);
-  break;
-}
-
+ let count = prompt ("Enter")
+const start = "h";
+const end = "llo";
+let middle = "";
+ for (let i = 0; i < count ; ++i){
+   middle = middle + "e";
+ }
+alert (start + middle + end);
 
 /*
 Program to calculate the sum of first n natural numbers(1,2,3...n are known as natural numbers). Prompt user to enter n (using `prompt`) then based on input provided calculate and show result in `alert`.
@@ -54,7 +55,7 @@ Program to calculate the sum of first n natural numbers(1,2,3...n are known as n
 
 let sum = Number (prompt("Enter the number"));
 let sumOfNaturslNumber = Number (" ") ;
-let i = 0 ;
+let i = 1  ;
 while ( i <= sum){
   sumOfNaturslNumber = sumOfNaturslNumber + i ;
   i = i + 1;
