@@ -13,6 +13,26 @@ const ACCESSORY_PRICE = 9.99;
 
 var bank_balance = 303.91;
 var amount = 0;
+var phone = 0;
+var phoneWithAccessories = 0; 
 // your code goes here
 
 // ⛑ Answer of the above will `$334.76`.
+
+while (bank_balance > 200){
+    phoneWithAccessories = ( 99.99 + 9.99) + ( 99.99 + 9.99) * 0.08;
+    amount = amount + phoneWithAccessories ;
+    bank_balance = bank_balance - phoneWithAccessories ;
+}
+while ( bank_balance >0 && bank_balance < 200) {
+    phone =  99.99  + 99.99 * 0.08;
+    amount = amount + phone ;
+    bank_balance = bank_balance - phone ;
+}
+
+if (amount < bank_balance){
+    alert ("can afford it");
+}
+else if (amount > bank_balance){
+    alert ("can not afford it");
+}
