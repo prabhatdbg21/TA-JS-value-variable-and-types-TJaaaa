@@ -19,13 +19,13 @@ var phoneWithAccessories = 0;
 
 // ⛑ Answer of the above will `$334.76`.
 
-while (bank_balance > 200){
-    phoneWithAccessories = ( 99.99 + 9.99) + ( 99.99 + 9.99) * 0.08;
+while (bank_balance > SPENDING_THRESHOLD){
+    phoneWithAccessories = ( PHONE_PRICE + ACCESSORY_PRICE) + (PHONE_PRICE + ACCESSORY_PRICE ) * TAX_RATE;
     amount = amount + phoneWithAccessories ;
     bank_balance = bank_balance - phoneWithAccessories ;
 }
 while ( bank_balance >0 && bank_balance < 200) {
-    phone =  99.99  + 99.99 * 0.08;
+    phone =  PHONE_PRICE  + PHONE_PRICE * TAX_RATE;
     amount = amount + phone ;
     bank_balance = bank_balance - phone ;
 }
